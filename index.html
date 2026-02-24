@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airon Daryl Balondo | Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4b8b5f5b4f.js" crossorigin="anonymous"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* HERO */
+.hero{padding:60px 10%;}
+.profile-container{display:flex;align-items:center;gap:30px;}
+
+.profile-wrapper{border-radius:50%;padding:5px;transition:0.4s;}
+.profile-wrapper:hover{
+    box-shadow:0 0 40px #00f7ff,0 0 80px rgba(0,247,255,0.6);
+    transform:scale(1.05);
+}
+
+.profile-pic{
+    width:170px;height:170px;
+    object-fit:cover;object-position:top;
+    border-radius:50%;
+    border:4px solid #00f7ff;
+}
+
+.hero-text h1{font-size:2.6rem;}
+.hero-text p{margin-top:6px;opacity:0.9;}
+
+.typing{color:#00f7ff;font-size:1.2rem;min-height:30px;}
+.typing::after{
+    content:"|";
+    animation:blink 1s infinite;
+}
+@keyframes blink{50%{opacity:0;}}
+
+/* SOCIAL */
+.social-links{margin-top:15px;}
+.social-links a{
+    color:white;font-size:1.5rem;margin-right:15px;
+    transition:0.3s;
+}
+.social-links a:hover{
+    color:#00f7ff;
+    transform:translateY(-3px);
+}
+
+/* NAV */
+nav{
+    position:sticky;top:0;
+    background:rgba(0,0,0,0.6);
+    padding:12px;text-align:center;
+    backdrop-filter:blur(10px);
+}
+nav a{
+    color:white;margin:0 15px;
+    text-decoration:none;font-weight:500;
+}
+nav a:hover{color:#00f7ff;}
+
+/* SECTIONS */
+section{padding:40px 10%;}
+.section-title{
+    font-size:2rem;margin-bottom:20px;
+    border-left:5px solid #00f7ff;
+    padding-left:10px;
+}
+
+.card{
+    background:rgba(255,255,255,0.06);
+    padding:20px;margin:15px 0;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.card ul{margin-top:10px;margin-left:20px;}
+
+.skills span{
+    display:inline-block;
+    background:#00f7ff;color:#000;
+    padding:8px 12px;margin:5px;
+    border-radius:20px;
+    font-size:0.9rem;
+}
+
+/* FADE */
+.fade-in{opacity:0;transform:translateY(30px);transition:1s;}
+.fade-in.show{opacity:1;transform:translateY(0);}
+
+@media(max-width:768px){
+    .profile-container{flex-direction:column;text-align:center;}
+    .profile-pic{width:140px;height:140px;}
+}
+
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.6);}
+</style>
+</head>
+
+<body>
+
+<header class="hero fade-in">
+    <div class="profile-container">
+        <div class="profile-wrapper">
+            <img src="profile.jpg" alt="Airon Balondo" class="profile-pic">
+        </div>
+        <div class="hero-text">
+            <h1>Airon Daryl B. Balondo</h1>
+            <p class="typing"><span id="typed-text"></span></p>
+            <p>Lambakin, Marilao, Bulacan</p>
+            <p>daryl7165@gmail.com | 09621540309</p>
+
+            <div class="social-links">
+                <a href="https://github.com/ChecheR0n" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/airon-balondo-090516399/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#objective">Objective</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#project">Capstone</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+</nav>
+
+<section id="objective" class="fade-in">
+    <h2 class="section-title">Objective</h2>
+    <div class="card">
+        I have a strong interest in computers, gaming, programming, and marketing.
+        My knowledge in these areas helps me combine technical skills with creativity.
+        I enjoy programming because it allows me to create solutions and bring ideas to life.
+        My love for gaming has taught me how to think critically, work as a team, and adapt to challenges.
+        With my marketing experience, I understand how to analyze trends, connect with people,
+        and share ideas effectively. These skills help me learn, grow, and succeed in the fast-changing digital world.
+    </div>
+</section>
+
+<section id="education" class="fade-in">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+        <strong>STI College Malolos</strong><br>
+        Bachelor of Science in Information Technology (2022 - Present)
+    </div>
+    <div class="card">
+        <strong>Bulacan State University</strong><br>
+        Bachelor of Science in Mechanical Engineering (2020 - 2021)
+    </div>
+    <div class="card">
+        <strong>Jesus Is Lord College Foundation Inc.</strong><br>
+        STEM Strand (2018 - 2020)
+    </div>
+</section>
+
+<section id="experience" class="fade-in">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="card">
+        <strong>PC Build Technician – Marilao, Bulacan</strong><br>
+        Mar 1, 2019 – Jan 7, 2022
+        <ul>
+            <li>Identified hardware and software problems in computers and peripherals.</li>
+            <li>Updated software for security and compatibility.</li>
+            <li>Performed routine maintenance and system optimization.</li>
+            <li>Assisted customers with troubleshooting and installations.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <strong>CCTV Navigator, Encoder – Barangay San Miguel (Hagonoy, Bulacan)</strong><br>
+        Work Immersion | Jun 5 – Jun 17, 2023
+        <ul>
+            <li>Assisted in community projects.</li>
+            <li>Handled documentation and clerical tasks.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="project" class="fade-in">
+    <h2 class="section-title">Capstone Project</h2>
+    <div class="card">
+        <strong>MotoMod: Custom Motorcycle Builder with Real-Time Parts Shopping</strong><br>
+        December 2025
+        <ul>
+            <li>3D modeling and asset creation using Blender.</li>
+            <li>Developed in Unity using C#.</li>
+            <li>Created and documented system research paper.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills" class="fade-in">
+    <h2 class="section-title">Skills</h2>
+    <div class="card skills">
+        <span>Java</span>
+        <span>C#</span>
+        <span>Unity</span>
+        <span>Blender</span>
+        <span>Visual Studio</span>
+        <span>Microsoft Office</span>
+        <span>PC Troubleshooting</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+    </div>
+</section>
+
+<section id="certifications" class="fade-in">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card">
+        <strong>SAP S/4HANA Training (Global Bike Simulation)</strong><br>
+        Aug 12 – Dec 21, 2024
+        <ul>
+            <li>Modules: HCM, WM, PS, EAM, CS, QM</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    © 2026 Airon Daryl Balondo
+</footer>
+
+<script>
+const texts=["BSIT Student","Programmer","3D Designer","Unity Developer","PC Build Technician"];
+let textIndex=0,charIndex=0;
+const typedText=document.getElementById("typed-text");
+
+function typeEffect(){
+    if(charIndex<texts[textIndex].length){
+        typedText.textContent+=texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect,100);
+    }else setTimeout(eraseEffect,1500);
+}
+
+function eraseEffect(){
+    if(charIndex>0){
+        typedText.textContent=texts[textIndex].substring(0,charIndex-1);
+        charIndex--;
+        setTimeout(eraseEffect,50);
+    }else{
+        textIndex=(textIndex+1)%texts.length;
+        setTimeout(typeEffect,300);
+    }
+}
+document.addEventListener("DOMContentLoaded",typeEffect);
+
+const faders=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+},{threshold:0.3});
+faders.forEach(f=>observer.observe(f));
+</script>
+
+</body>
+</html>
